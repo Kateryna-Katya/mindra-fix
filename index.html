@@ -1,56 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mindra-fix/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindra-Fix | Консалтинг нового поколения</title>
+    <meta name="description" content="Инновационные решения для вашего бизнеса и личной эффективности.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/mindra-fix/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/mindra-fix/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/mindra-fix/assets/styles-C1DpAM_5.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Mindra<span class="logo__accent">-</span>Fix</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">Платформа</a></li>
+              <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" id="burger-menu" aria-label="Открыть меню">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg-deco"></div>
+
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge animate-item">
+              <i data-lucide="zap"></i> Инновационная технология 2026
+          </div>
+
+          <h1 class="hero__title animate-item">
+              Технология нового поколения:
+              <span class="hero__title-accent">решения, которые меняют правила игры.</span>
+          </h1>
+
+          <p class="hero__description animate-item">
+              Переосмыслите подход к развитию. Экспертная поддержка на всех этапах для вашего консалтинг-бизнеса. Платформа уже доступна в Европе.
+          </p>
+
+          <div class="hero__actions animate-item">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--outline animate-link">
+                  Узнать детали <i data-lucide="arrow-right" style="width: 18px;"></i>
+              </a>
+          </div>
+
+          <div class="hero__trust animate-item">
+              <div class="trust-avatars">
+                  <img src="img/placeholder.png" alt="Client">
+                  <img src="img/placeholder.png" alt="Client">
+                  <img src="img/placeholder.png" alt="Client">
+              </div>
+              <div class="trust-text">
+                  <span style="font-weight: 700; color: var(--primary-color);">500+</span> экспертов в Италии уже с нами
+              </div>
+          </div>
+      </div>
+
+      <div class="hero__visual animate-visual">
+          <div class="visual-card">
+              <img src="img/placeholder.png" alt="Mindra-Fix Dashboard Interface" class="visual-card__img">
+              <div class="floating-widget floating-widget--1">
+                  <i data-lucide="trending-up"></i> Рост эффективности +35%
+              </div>
+              <div class="floating-widget floating-widget--2">
+                  <i data-lucide="check-circle"></i> Цель достигнута
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="about section-padding" id="about">
+  <div class="container about__container">
+      <div class="about__image reveal-left">
+          <div class="image-wrapper">
+              <img src="img/placeholder.png" alt="Mindra-Fix Platform Tools">
+              <div class="about__experience-badge">
+                  <span class="experience-years">10+</span>
+                  <span class="experience-text">лет экспертизы в ЕС</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="about__content reveal-right">
+          <h2 class="section-title">Переосмыслите подход к <span class="italic">развитию</span></h2>
+          <p class="section-subtitle">Оценить перспективы проекта стало проще</p>
+
+          <p class="about__text">
+              Mindra-Fix — это не просто консалтинг-блог, это <strong>передовая цифровая инфраструктура</strong> для тех, кто готов строить карьеру, которая работает на вас. Мы объединили аналитику и практический опыт, чтобы создать решения, меняющие правила игры.
+          </p>
+
+          <ul class="about__features">
+              <li class="about__feature-item">
+                  <div class="feature-icon"><i data-lucide="check-circle"></i></div>
+                  <div class="feature-info">
+                      <strong>AI-инструменты для реальных задач</strong>
+                      <p>Автоматизация рутины и точные прогнозы.</p>
+                  </div>
+              </li>
+              <li class="about__feature-item">
+                  <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                  <div class="feature-info">
+                      <strong>Поддержка по всем вопросам</strong>
+                      <p>Ваш персональный эксперт на связи 24/7.</p>
+                  </div>
+              </li>
+          </ul>
+
+          <a href="#contact" class="btn-link">
+              Запросить доступ <i data-lucide="chevron-right"></i>
+          </a>
+      </div>
+  </div>
+</section>
+<section class="benefits section-padding" id="benefits">
+  <div class="container">
+      <div class="benefits__header reveal-up">
+          <span class="section-subtitle">Ваши выгоды</span>
+          <h2 class="section-title">Стратегия роста на базе <span class="italic">инноваций</span></h2>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-card reveal-up">
+              <div class="benefit-card__icon">
+                  <i data-lucide="trending-up"></i>
+              </div>
+              <h3 class="benefit-card__title">Пассивный доход</h3>
+              <p class="benefit-card__text">Наша технология для пассивного дохода позволяет масштабировать проект без увеличения рабочего времени.</p>
+              <div class="benefit-card__number">01</div>
+          </div>
+
+          <div class="benefit-card reveal-up">
+              <div class="benefit-card__icon">
+                  <i data-lucide="zap"></i>
+              </div>
+              <h3 class="benefit-card__title">Легкий старт</h3>
+              <p class="benefit-card__text">Быстрый и лёгкий старт: подключение занимает всего 2 минуты. Легко разобраться даже без опыта.</p>
+              <div class="benefit-card__number">02</div>
+          </div>
+
+          <div class="benefit-card reveal-up">
+              <div class="benefit-card__icon">
+                  <i data-lucide="globe"></i>
+              </div>
+              <h3 class="benefit-card__title">Европейский охват</h3>
+              <p class="benefit-card__text">Платформа уже доступна в Европе. Мы обеспечиваем экспертную поддержку на всех этапах интеграции.</p>
+              <div class="benefit-card__number">03</div>
+          </div>
+
+          <div class="benefit-card reveal-up">
+              <div class="benefit-card__icon">
+                  <i data-lucide="layers"></i>
+              </div>
+              <h3 class="benefit-card__title">Гибкая адаптация</h3>
+              <p class="benefit-card__text">Удобная адаптация без сложностей. Практики, применимые уже сегодня в любом сегменте консалтинга.</p>
+              <div class="benefit-card__number">04</div>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+      <div class="footer__col-info">
+          <a href="/" class="logo logo--footer">
+              <span class="logo__text">Mindra-Fix</span>
+          </a>
+          <p class="footer__description">
+              Технологии нового поколения для тех, кто ценит время и результат. Платформа уже доступна в Европе.
+          </p>
+          <div class="footer__contacts">
+              <a href="tel:+39021234567" class="contact-link">
+                  <i data-lucide="phone"></i> +39 02 123 4567
+              </a>
+              <a href="mailto:hello@mindra-fix.fit" class="contact-link">
+                  <i data-lucide="mail"></i> hello@mindra-fix.fit
+              </a>
+              <span class="contact-link">
+                  <i data-lucide="map-pin"></i> Via Dante, 14, 20121 Milano MI, Italy
+              </span>
+          </div>
+      </div>
+
+      <div class="footer__col-nav">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#" class="footer__link">Главная</a></li>
+              <li><a href="#about" class="footer__link">Платформа</a></li>
+              <li><a href="#benefits" class="footer__link">Преимущества</a></li>
+              <li><a href="#innovations" class="footer__link">Инновации</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col-legal">
+          <h4 class="footer__title">Документы</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+              <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+              <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+              <li><a href="return.html" class="footer__link">Return Policy</a></li>
+              <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html" class="footer__link">Data Policy</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer__bottom container">
+      <p>© 2026 Mindra-Fix. Все права защищены. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
 
-
+    <script>
+      // Инициализация иконок Lucide
+      lucide.createIcons();
+  </script>
   </body>
 </html>
