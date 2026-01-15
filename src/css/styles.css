@@ -1344,3 +1344,72 @@ img {
     text-align: center;
   }
 }
+/* =========================
+   ЭТАП 5.2: LEGAL PAGES STYLE
+   ========================= */
+.pages {
+  padding: 160px 0 100px;
+  background-color: var(--bg-color);
+  min-height: 80vh;
+}
+
+.pages .container {
+  max-width: 800px;
+  /* Узкая колонка для удобства чтения */
+  margin: 0 auto;
+}
+
+.pages h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.pages h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.pages p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.pages ul {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.pages li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  position: relative;
+  list-style: disc;
+}
+
+/* Стили для ссылок внутри текста документов */
+.pages a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.pages a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .pages h1 {
+    font-size: 32px;
+  }
+
+  .pages {
+    padding: 120px 0 60px;
+  }
+}
